@@ -13,9 +13,8 @@
     "start": "parcel src/index.html",
     "build": "parcel build src/index.html",
     "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",
-    "lint": "tslint --project .",
-    "clear-build-cache": "rm -rf .cache/ dist/",
-    "typecheck": "tsc --noEmit"
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "clear-build-cache": "rm -rf .cache/ dist/"
   },
   "browserslist": [
     "last 2 Chrome versions",
